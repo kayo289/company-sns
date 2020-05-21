@@ -25,6 +25,7 @@ def loginfunc(request):
         print(request.POST['username'])
         username2 = request.POST['username']
         password2 = request.POST['password']
+        # 権限確認らしい
         user = authenticate(request, username=username2, password=password2)
         if user is not None:
             login(request, user)
