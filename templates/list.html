@@ -16,7 +16,7 @@
     <div class="alert alert-success" role="alert">
         <p>タイトル: <a href="{% url 'detail' item.pk %}">{{item.title}}</a></p>
         <p>投稿者: {{item.author}}</p>
-        <button type="button" class="btn btn-primary">Large button</button>
+        <a href="{% url 'good' item.pk %}" type="button" class="btn btn-primary">いいね: {{item.good}}</a>
         <button type="button" class="btn btn-secondary">Link</button>
     </div>
     {% endfor %}
