@@ -18,7 +18,7 @@
         <p>内容: {{object.content}}</p>
         <p><img src="{{object.images.url}}" width="300"></p>
         <a href="{% url 'good' object.pk %}" type="button" class="btn btn-primary">いいねする</a>
-        <a href="#" type="button" class="btn btn-secondary">既読</a>
+        <a href="{% url 'read' object.pk %}" type="button" class="btn btn-secondary">既読</a>
     </div>
 </div>
 {% endblock content %}
